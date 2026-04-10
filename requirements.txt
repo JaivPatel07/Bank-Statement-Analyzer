@@ -3,3 +3,7 @@ pandas
 plotly
 fpdf
 matplotlib
+google-generativeai
+python-dotenv
+scikit-learn
+numpy
