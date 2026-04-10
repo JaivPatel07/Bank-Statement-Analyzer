@@ -1,152 +1,130 @@
-# 💰 Bank Statement Analyzer
+# Bank Statement Analyzer
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-FF4B4B)
 
-A simple **student-built finance analyzer** made with Streamlit that helps you understand your spending by analyzing bank statement CSV files.  
-It turns raw transaction data into easy charts and summaries so you can see where your money goes.
+A web-based finance analysis tool built using Streamlit that processes bank statement CSV files and provides insights into spending patterns, income, and financial trends through visualizations and summaries.
 
 ---
 
-## 🚀 Live Demonstration
+## Live Demo
 
-Experience the application in real-time: [**Launch Bank Statement Analyzer**](https://jaivpatel07-bank-statement-analyzer-app-vhw2kv.streamlit.app/)
+Access the application:
+https://jaivpatel07-bank-statement-analyzer-app-vhw2kv.streamlit.app/
 
-**Access Credentials:**
-- **Username:** `admin`
-- **Password:** `admin`
-
----
-
-## 📌 Project Overview
-
-The **Bank Statement Analyzer** addresses the need for efficient personal finance tracking by automating the processing of bank transaction records. By leveraging data processing algorithms, the application parses raw CSV statements, normalizes date formats, and categorizes transactions to provide a clear financial picture.
-
-**Core Competencies Demonstrated:**
-- **Data Engineering:** Robust parsing and cleaning of financial datasets.
-- **Financial Analytics:** Automated calculation of income, expenses, and net balance.
-- **Data Visualization:** Dynamic charts for trend analysis and category breakdowns.
-- **Full-Stack Logic:** End-to-end implementation using Python and Streamlit.
+**Credentials:**
+Username: admin
+Password: admin
 
 ---
 
-## ✨ Features
+## Overview
 
-### 📂 Upload & Analyze
-- Upload your bank statement as CSV  
-- Automatically reads and sorts transactions  
-- Supports income (+) and expenses (-)
+This project automates the analysis of bank statements by parsing transaction data, cleaning and organizing it, and generating meaningful insights.
 
-### 🏷️ Auto Categorization
-- Uses keywords in descriptions  
-- Categories like Food, Bills, Transport, Income, etc.  
-- Basic but works well for common cases
+It demonstrates:
 
-### 📊 Dashboard
-- Total income, expenses, and balance  
-- Spending by category (pie chart)  
-- Income vs expense comparison  
-- Monthly and daily trends
-
-### 📄 Export
-- Download cleaned data as CSV  
-- Generate a PDF report
-
-### 🔐 Simple Login
-- Basic login added for practice  
-- Not meant for real security
+* Data parsing and transformation
+* Financial data analysis
+* Visualization of trends and categories
+* End-to-end application development
 
 ---
 
-## 🛠️ Technical Stack
+## Features
 
-| Component | Technology | Description |
-| :--- | :--- | :--- |
-| **Language** | Python 3.8+ | Core logic and scripting |
-| **Framework** | Streamlit | Web application interface and state management |
-| **Data Manipulation** | Pandas | Dataframes, cleaning, and aggregation |
-| **Visualization** | Plotly & Matplotlib | Interactive and static charting |
-| **Reporting** | FPDF | PDF report generation |
+### Data Processing
+
+* Upload CSV bank statements
+* Parse and normalize transaction data
+* Handle income and expense entries
+
+### Categorization
+
+* Automatically categorize transactions using keyword-based logic
+* Supports categories like Food, Bills, Transport, and Income
+
+### Dashboard
+
+* Total income, expenses, and balance
+* Category-wise spending (pie chart)
+* Income vs expense comparison
+* Monthly and daily trends
+
+### Export
+
+* Download cleaned data as CSV
+* Generate PDF reports
+
+### Authentication
+
+* Basic login system for controlled access
 
 ---
 
-## � Project Structure
+## Tech Stack
 
-```text
+* Python
+* Streamlit
+* Pandas
+* Matplotlib, Plotly
+* FPDF
+
+---
+
+## Project Structure
+
+```
 Bank-Statement-Analyzer/
 │
 ├── ui/
-│   ├── upload.py       # File upload and validation interface
-│   └── dashboard.py    # Visualization logic and dashboard layout
+│   ├── upload.py
+│   └── dashboard.py
 │
 ├── utils/
-│   ├── parser.py       # Core logic for parsing and categorizing transactions
-│   └── exporter.py     # PDF generation and CSV export utilities
+│   ├── parser.py
+│   └── exporter.py
 │
-├── app.py              # Application entry point
-├── requirements.txt    # Project dependencies
-└── README.md           # Project documentation
+├── app.py
+├── requirements.txt
+└── README.md
 ```
-
-## 🛠️ Built With
-
-- Python  
-- Streamlit  
-- Pandas  
-- Plotly  
-- Matplotlib  
-- FPDF  
 
 ---
 
----
-
-## ⚙️ Installation & Setup
-
-Follow these steps to set up the project locally.
-
-### 1️⃣ Clone the Repository
+## Installation
 
 ```bash
-git clone https://github.com/your-username/bank-statement-analyzer.git
-cd bank-statement-analyzer
-```
+git clone https://github.com/JaivPatel07/Bank-Statement-Analyzer.git
+cd Bank-Statement-Analyzer
 
-### 2️⃣ Environment Setup
-
-Create a virtual environment to manage dependencies.
-
-**Windows:**
-```bash
 python -m venv venv
-venv\Scripts\activate
-```
+source venv/bin/activate   # Windows: venv\\Scripts\\activate
 
-**Mac/Linux:**
-```bash
-source venv/bin/activate
-```
-
-### 3️⃣ Install Dependencies
-
-```bash
 pip install -r requirements.txt
-```
-
-### 4️⃣ Run the Application
-
-```bash
 streamlit run app.py
 ```
 
 ---
 
-## 🚀 Usage Guide
+## Usage
 
-1. **Launch the App**: Run the command above to start the local server.
-2. **Upload Statement**: Drag and drop your bank statement CSV file.
-   - *Note: Ensure your CSV has columns for Date, Description, and Amount.*
-3. **Analyze**: Explore the interactive charts and summaries.
-4. **Download Reports**: Generate a PDF summary or export cleaned data.
+1. Upload a bank statement CSV file
+2. View analyzed data and visualizations
+3. Explore spending patterns
+4. Export reports if needed
 
 ---
+
+## Future Improvements
+
+* Advanced categorization using machine learning
+* Better UI/UX design
+* Secure authentication system
+* Support for multiple bank formats
+
+---
+
+## About
+
+This project showcases practical skills in data processing, visualization, and building real-world applications using Python and Streamlit.
